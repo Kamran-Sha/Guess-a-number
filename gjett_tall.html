@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+</head>
+<body>
+
+<input id = "LagreMEG" type = "number">
+<button onclick = "myFunction()">Gjett!</button><br>
+<p id = "svar"></p>
+
+<script>
+
+function myFunction(){
+	var tilfeldigtall = parseInt(Math.random()*10);
+	var gjettet = document.getElementById("LagreMEG").value;
+
+	if (tilfeldigtall == gjettet) {document.getElementById("svar").innerHTML = "Suksess, du gjettet riktig!";}
+	else {document.getElementById("svar").innerHTML = "Du gjettet feil! Det tilfeldige tallet er " + tilfeldigtall;} }	
+
+</script>
+
+</body>
+</html>
